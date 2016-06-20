@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication"
+        xmlns:model="clr-namespace:Model;assembly=Model"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <local:MainWindowViewModel />
+    </Window.DataContext>
+    <Window.Resources>
+        <ControlTemplate x:Key="validationErrorTemplate">
+            <DockPanel>
+                <Border BorderBrush="Red">
+                    <AdornedElementPlaceholder x:Name="ErrorAdorner"></AdornedElementPlaceholder>
+                </Border>
+            </DockPanel>
+        </ControlTemplate>
+
+        <DataTemplate DataType="{x:Type model:Car}">
+            <TextBox Text="{Binding Path=Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,
+                ValidatesOnDataErrors=True,ValidatesOnNotifyDataErrors=True}"
+                   Validation.ErrorTemplate="{StaticResource ResourceKey=validationErrorTemplate}"    
+                     Width="100" ToolTip=""></TextBox>
+        </DataTemplate>
+    </Window.Resources>
+    <Window.Content>
+        <ListBox ItemsSource="{Binding Path=CarList}"></ListBox>
+    </Window.Content>
+</Window>
