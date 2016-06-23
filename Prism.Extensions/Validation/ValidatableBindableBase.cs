@@ -1,11 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using Prism.Mvvm;
 
 namespace Prism.Extensions.Validation
@@ -16,7 +15,7 @@ namespace Prism.Extensions.Validation
     /// instance of a model class and return the results of this validation as a list of properties' errors.
     /// </summary>
     // Documentation on validating user input is at http://go.microsoft.com/fwlink/?LinkID=288817&clcid=0x409
-    public class ValidatableBindableBase : BindableBase, IValidatableBindableBase
+    public class ValidatableBindableBase : BindableBase, IValidatableBindableBase, INotifyDataErrorInfo
     {
         private readonly BindableValidator _bindableValidator;
 
@@ -51,6 +50,19 @@ namespace Prism.Extensions.Validation
             get
             {
                 return _bindableValidator;
+            }
+        }
+        /// <summary>
+        /// Gets a value that indicates whether the entity has validation errors.
+        /// </summary>
+        /// <value>
+        /// <c>true</c> if this instance contains validation errors; otherwise, <c>false</c>.
+        /// </value>
+        public bool HasErrors
+        {
+            get
+            {
+                return !ValidateProperties();
             }
         }
 
@@ -131,6 +143,19 @@ namespace Prism.Extensions.Validation
                 }
             }
             return result;
+        }
+        /// <summary>
+        /// Gets the validation errors for a specified property or for the entire entity.
+        /// </summary>
+        /// <param name="propertyName">The name of the property to retrieve validation errors for; or null or Empty, to retrieve entity-level errors.</param>
+        /// <returns>The validation errors for the property or entity.</returns>
+        public IEnumerable GetErrors(string propertyName)
+        {
+            if (HasErrors==false)
+            {
+                return Enumerable.Empty<String>();
+            }
+            return _bindableValidator[propertyName];
         }
     }
 }

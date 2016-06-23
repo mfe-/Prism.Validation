@@ -20,10 +20,11 @@
         </ControlTemplate>
 
         <DataTemplate DataType="{x:Type model:Car}">
-            <TextBox Text="{Binding Path=Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,
+            <!--<TextBox Text="{Binding Path=Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,
                 ValidatesOnDataErrors=True,ValidatesOnNotifyDataErrors=True}"
                    Validation.ErrorTemplate="{StaticResource ResourceKey=validationErrorTemplate}"    
-                     Width="100" ToolTip=""></TextBox>
+                     Width="100" ToolTip=""></TextBox>-->
+            <TextBox Text="{Binding Path=Name,Mode=TwoWay, ValidatesOnDataErrors=True, NotifyOnValidationError=True,ValidatesOnExceptions =True}" />
         </DataTemplate>
     </Window.Resources>
     <Window.Content>
