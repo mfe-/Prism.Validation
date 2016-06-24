@@ -1,5 +1,7 @@
 # Prism.Extensions
 
+[<img src="https://ci.appveyor.com/api/projects/status/github/mfe-/Prism.Extensions?branch=master&svg=true">](https://ci.appveyor.com/project/mfe-/prism-extensions)
+
 The Prism.Extensions goal is to share, extensions for the [Prism](https://github.com/PrismLibrary) framework, acroos the .NET application model also known as [App models](https://en.wikipedia.org/wiki/.NET_Framework#App_models). Therefore the Prism.Extensions is shipped as PCL.
 
 ##Validation
