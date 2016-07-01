@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Prism.Extensions.Validation
+namespace Prism.Validation
 {
     /// <summary>
     /// The IValidatableBindableBase interface was created to add validation support for model classes that contain validation rules.

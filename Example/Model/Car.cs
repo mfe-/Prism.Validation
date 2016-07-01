@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
-using Prism.Extensions.Validation;
+using Prism.Validation;
 
 namespace Model
 {

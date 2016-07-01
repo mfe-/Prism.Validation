@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model;
-using Prism.Extensions.Validation;
+using Prism.Validation;
 
 namespace WpfApplication
 {
