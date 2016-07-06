@@ -12,7 +12,7 @@
     </Window.DataContext>
     <Window.Resources>
         <DataTemplate DataType="{x:Type model:Car}">
-            <TextBox Text="{Binding Path=Name,Mode=TwoWay, ValidatesOnDataErrors=True, NotifyOnValidationError=True,ValidatesOnExceptions =True}" />
+            <TextBox Text="{Binding Path=Name,Mode=TwoWay}" />
         </DataTemplate>
     </Window.Resources>
     <Window.Content>
