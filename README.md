@@ -19,3 +19,6 @@ Model classes are a good example which can be used to share across different pla
 The Prism Core Libary doesn't provide a validation implementation (Related [Issue](https://github.com/PrismLibrary/Prism/issues/625) on Prism), so the Prism.Validation libary is filling this gap. The validation was taken over from the UWP [ValidatableBindableBase](https://github.com/PrismLibrary/Prism/tree/de7b03b5e015edcac595602512877b264a1345d1/Source/Windows10/Prism.Windows/Validation) with litte adjustments.
 
 With the Prism.Validation you could share your model with DataAnnotaion between wpf, xamarin and uwp. 
+
+##Contribute
+Contribute if you want.
