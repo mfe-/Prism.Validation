@@ -286,7 +286,7 @@ namespace Prism.Validation
         /// <param name="propertyName">Name of the property used to notify listeners.</param>
         private void OnErrorsChanged(string propertyName)
         {
-            ErrorsChanged?.Invoke(this, new DataErrorsChangedEventArgs(propertyName));
+            if (IsValidationEnabled) ErrorsChanged?.Invoke(this, new DataErrorsChangedEventArgs(propertyName));
         }
     }
 }
