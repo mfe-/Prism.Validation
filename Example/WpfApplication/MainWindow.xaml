@@ -16,6 +16,9 @@
         </DataTemplate>
     </Window.Resources>
     <Window.Content>
-        <ListBox ItemsSource="{Binding Path=CarList}"></ListBox>
+        <DockPanel LastChildFill="False">
+            <ListBox DockPanel.Dock="Top" ItemsSource="{Binding Path=CarList}"></ListBox>
+            <ComboBox DockPanel.Dock="Top" ItemsSource="{Binding Path=CarList}" SelectedItem="{Binding Path=SelectedCar,Mode=TwoWay}"></ComboBox>
+        </DockPanel>
     </Window.Content>
 </Window>
