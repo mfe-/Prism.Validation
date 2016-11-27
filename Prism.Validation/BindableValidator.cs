@@ -6,7 +6,6 @@ using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 
 namespace Prism.Validation
 {
@@ -182,7 +181,7 @@ namespace Prism.Validation
             // Get all the properties decorated with the ValidationAttribute attribute.
             var propertiesToValidate = _entityToValidate.GetType()
                                                         .GetRuntimeProperties()
-                                                        .Where(c => c.GetCustomAttributes(typeof(ValidationAttribute)).Any());
+                                                        .Where(c => c.GetCustomAttributes().Any(a => a.GetType().GetTypeInfo().BaseType.Name == "ValidationAttribute"));
 
             foreach (PropertyInfo propertyInfo in propertiesToValidate)
             {

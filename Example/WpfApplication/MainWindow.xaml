@@ -12,13 +12,17 @@
     </Window.DataContext>
     <Window.Resources>
         <DataTemplate DataType="{x:Type model:Car}">
-            <TextBox Text="{Binding Path=Name,Mode=TwoWay}" />
+            <TextBox Text="{Binding Path=Name,Mode=TwoWay}"
+                     ToolTip="{Binding Path=(Validation.Errors).Count,UpdateSourceTrigger=PropertyChanged,RelativeSource={RelativeSource Self}}">
+            </TextBox>
         </DataTemplate>
     </Window.Resources>
     <Window.Content>
         <DockPanel LastChildFill="False">
             <ListBox DockPanel.Dock="Top" ItemsSource="{Binding Path=CarList}"></ListBox>
-            <ComboBox DockPanel.Dock="Top" ItemsSource="{Binding Path=CarList}" SelectedItem="{Binding Path=SelectedCar,Mode=TwoWay}"></ComboBox>
+            <ComboBox DockPanel.Dock="Top" ItemsSource="{Binding Path=CarList}" 
+                      SelectedItem="{Binding Path=SelectedCar,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True}"
+                      ToolTip="{Binding Path=(Validation.Errors).Count,UpdateSourceTrigger=PropertyChanged,RelativeSource={RelativeSource Self}}"></ComboBox>
         </DockPanel>
     </Window.Content>
 </Window>
