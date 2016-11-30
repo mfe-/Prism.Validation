@@ -26,7 +26,9 @@ With the Prism.Validation you could share your model with DataAnnotaion between 
 
 - Replaced [Portable Data Annotations](https://www.nuget.org/packages/Portable.DataAnnotations/) with [System.ComponentModel.Annotations](https://www.nuget.org/packages/System.ComponentModel.Annotations/)
 - Changed Prism.Validation PCL to portable45-net45+win8
-- #4 Fixed by using System.ComponentModel.Annotations
+- [#4](https://github.com/mfe-/Prism.Validation/issues/4) Fixed by using System.ComponentModel.Annotations
+- [#5](https://github.com/mfe-/Prism.Validation/issues/5) Upgrade packages to Prism 6.2
+- [#3](https://github.com/mfe-/Prism.Validation/issues/3) Rename Prism.Extensions to Prism.Validation enhancement
 
 ###1.0.0.0
 - Init (The validation was taken over from the UWP [ValidatableBindableBase](https://github.com/PrismLibrary/Prism/tree/de7b03b5e015edcac595602512877b264a1345d1/Source/Windows10/Prism.Windows/Validation) with litte adjustments.)
