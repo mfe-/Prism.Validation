@@ -11,7 +11,7 @@ The Prism.Validation goal is to share extensions for the [Prism](https://github.
 1. Install Prism.Validation in your model project with nuget ```Install-Package Prism.Validation``` 
 2. Create your model class and inherit from ```ValidatableBindableBase```.
 3. Decorate your properties with DataAnnotations like ```[StringLength(2, ErrorMessage = "Max 2 digits")]```
-4. Set Binding in XAML like ```<TextBox Text="{Binding Path=Name,Mode=TwoWay}" />``` 
+4. Set Binding in XAML like ```<TextBox Text="{Binding Path=Name,Mode=TwoWay,ValidatesOnDataErrors=True,UpdateSourceTrigger=PropertyChanged}" />``` 
 
 ##Validation
 Model classes are a good example which can be used to share across different platforms. Also you may want to add some basic validations into the model with DataAnnotaions.
@@ -19,6 +19,18 @@ Model classes are a good example which can be used to share across different pla
 The Prism Core Libary doesn't provide a validation implementation (Related [Issue](https://github.com/PrismLibrary/Prism/issues/625) on Prism), so the Prism.Validation libary is filling this gap. The validation was taken over from the UWP [ValidatableBindableBase](https://github.com/PrismLibrary/Prism/tree/de7b03b5e015edcac595602512877b264a1345d1/Source/Windows10/Prism.Windows/Validation) with litte adjustments.
 
 With the Prism.Validation you could share your model with DataAnnotaion between wpf, xamarin and uwp. 
+
+##Changelog
+
+###1.1.0.0
+
+- Replaced [Portable Data Annotations](https://www.nuget.org/packages/Portable.DataAnnotations/) with [System.ComponentModel.Annotations](https://www.nuget.org/packages/System.ComponentModel.Annotations/)
+- Changed Prism.Validation PCL to portable45-net45+win8
+- #4 Fixed by using System.ComponentModel.Annotations
+
+###1.0.0.0
+- Init (The validation was taken over from the UWP [ValidatableBindableBase](https://github.com/PrismLibrary/Prism/tree/de7b03b5e015edcac595602512877b264a1345d1/Source/Windows10/Prism.Windows/Validation) with litte adjustments.)
+- Used [Portable Data Annotations](https://www.nuget.org/packages/Portable.DataAnnotations/)
 
 ##Contribute
 Contribute if you want.
