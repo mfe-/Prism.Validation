@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Prism.Validation")]
-[assembly: AssemblyDescription("Provides Prism Extensions as PCL like Validation.")]
+[assembly: AssemblyDescription("Provides Validation functionality")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("mfe_")]
 [assembly: AssemblyProduct("Prism.Validation")]
