@@ -12,7 +12,7 @@
     </Window.DataContext>
     <Window.Resources>
         <DataTemplate DataType="{x:Type model:Car}">
-            <TextBox Text="{Binding Path=Name,Mode=TwoWay}"
+            <TextBox Text="{Binding Path=Name,Mode=TwoWay,ValidatesOnDataErrors=True,UpdateSourceTrigger=PropertyChanged}"
                      ToolTip="{Binding Path=(Validation.Errors).Count,UpdateSourceTrigger=PropertyChanged,RelativeSource={RelativeSource Self}}">
             </TextBox>
         </DataTemplate>
