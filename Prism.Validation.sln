@@ -14,13 +14,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Example\Model\Mode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication", "Example\WpfApplication\WpfApplication.csproj", "{73C7ADE4-F9A2-4045-ADA4-7B003180A01C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Validation", "Prism.Validation\Prism.Validation.csproj", "{47C32A9B-6304-4F0E-A8DB-2DBF7584AEF0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Validation.Test.Wpf", "Prism.Validation.Test\Prism.Validation.Test.Wpf\Prism.Validation.Test.Wpf.csproj", "{292D503C-B4D0-4466-8F23-0EF3DDAD0D9F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Validation.Test.UWP", "Prism.Validation.Test\Prism.Validation.Test.UWP\Prism.Validation.Test.UWP.csproj", "{D41FBC4A-7956-47DC-9C30-D5AC3A638D66}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{DC8D4C07-3155-42B9-8897-CFD7320EB336}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Validation", "Core\Prism.Validation\Prism.Validation.csproj", "{47C32A9B-6304-4F0E-A8DB-2DBF7584AEF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Validation.Test.Wpf", "Core\Prism.Validation.Test\Prism.Validation.Test.Wpf\Prism.Validation.Test.Wpf.csproj", "{292D503C-B4D0-4466-8F23-0EF3DDAD0D9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Validation.Test.UWP", "Core\Prism.Validation.Test\Prism.Validation.Test.UWP\Prism.Validation.Test.UWP.csproj", "{D41FBC4A-7956-47DC-9C30-D5AC3A638D66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
