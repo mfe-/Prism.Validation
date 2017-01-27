@@ -9,10 +9,11 @@ Because most of you want to share your code acroos the .NET application model (a
 [Install](https://www.nuget.org/packages/Prism.Validation/) with nuget ```Install-Package Prism.Validation```
 
 ##Use
-1. Install Prism.Validation in your model project with nuget ```Install-Package Prism.Validation``` 
-2. Create your model class and inherit from ```ValidatableBindableBase```.
-3. Decorate your properties with DataAnnotations like ```[StringLength(2, ErrorMessage = "Max 2 digits")]```
-4. Set Binding in XAML like ```<TextBox Text="{Binding Path=Name,Mode=TwoWay,ValidatesOnDataErrors=True,UpdateSourceTrigger=PropertyChanged}" />``` 
+1. Use in your PCL Profile ```Profile7``` (Set in your .csproj```<TargetFrameworkProfile>Profile7</TargetFrameworkProfile>```)
+2. Install Prism.Validation in your project with nuget ```Install-Package Prism.Validation``` 
+3. Create your model class and inherit from ```ValidatableBindableBase```.
+4. Decorate your properties with DataAnnotations like ```[StringLength(2, ErrorMessage = "Max 2 digits")]```
+5. Set Binding in XAML like ```<TextBox Text="{Binding Name,Mode=TwoWay,ValidatesOnDataErrors=True,UpdateSourceTrigger=PropertyChanged}" />``` 
 
 ##Validation
 Model classes are a good example which can be used to share across different platforms. Also you may want to add some basic validations into the model with DataAnnotaions.
