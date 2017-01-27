@@ -79,7 +79,7 @@ namespace Prism.Validation
         {
             get
             {
-                return _errors.ContainsKey(propertyName) ? _errors[propertyName] : EmptyErrorsCollection;
+                return (propertyName != null && _errors.ContainsKey(propertyName)) ? _errors[propertyName] : EmptyErrorsCollection;
             }
         }
 
