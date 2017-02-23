@@ -130,11 +130,11 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core\Prism.Validation\Prism.Validation.csproj">
+    <ProjectReference Include="..\..\Core\Prism.Validation\Prism.Validation.csproj">
       <Project>{47c32a9b-6304-4f0e-a8db-2dbf7584aef0}</Project>
       <Name>Prism.Validation</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Example\Model\Model.csproj">
+    <ProjectReference Include="..\Model\Model.csproj">
       <Project>{b96510ec-681d-4a60-8c7d-3b9b7e82816a}</Project>
       <Name>Model</Name>
     </ProjectReference>

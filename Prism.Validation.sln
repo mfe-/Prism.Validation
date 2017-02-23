@@ -22,7 +22,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Validation.Test.Wpf",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Validation.Test.UWP", "Core\Prism.Validation.Test\Prism.Validation.Test.UWP\Prism.Validation.Test.UWP.csproj", "{D41FBC4A-7956-47DC-9C30-D5AC3A638D66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UwpApp1", "UwpApp1\UwpApp1.csproj", "{891EC693-A71E-4A8B-AE45-8D6C9C5BD11D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UwpApp1", "Example\UwpApp1\UwpApp1.csproj", "{891EC693-A71E-4A8B-AE45-8D6C9C5BD11D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,8 +123,6 @@ Global
 		{D41FBC4A-7956-47DC-9C30-D5AC3A638D66}.Release|x86.Build.0 = Release|x86
 		{D41FBC4A-7956-47DC-9C30-D5AC3A638D66}.Release|x86.Deploy.0 = Release|x86
 		{891EC693-A71E-4A8B-AE45-8D6C9C5BD11D}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{891EC693-A71E-4A8B-AE45-8D6C9C5BD11D}.Debug|Any CPU.Build.0 = Debug|x86
-		{891EC693-A71E-4A8B-AE45-8D6C9C5BD11D}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{891EC693-A71E-4A8B-AE45-8D6C9C5BD11D}.Debug|ARM.ActiveCfg = Debug|ARM
 		{891EC693-A71E-4A8B-AE45-8D6C9C5BD11D}.Debug|ARM.Build.0 = Debug|ARM
 		{891EC693-A71E-4A8B-AE45-8D6C9C5BD11D}.Debug|ARM.Deploy.0 = Debug|ARM
