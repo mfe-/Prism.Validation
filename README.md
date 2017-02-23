@@ -8,7 +8,20 @@ Because most of you want to share your code acroos the .NET application model (a
 ##Install
 [Install](https://www.nuget.org/packages/Prism.Validation/) with nuget ```Install-Package Prism.Validation```
 
-##Use
+##Useage for version 1.1.0.0 (Use Prism.Validation in a Library Project)
+1. In you PCL set your Targeting to at least .NETStandard 1.4
+2. Make sure your NETStandard.Library is up to date (1.6.1) 
+3. Open project.json and replace ```"frameworks": {
+    "netstandard1.4": { }
+  }```.
+4. to ``` "frameworks": {
+   "netstandard1.4": {
+     "imports": "portable45-net45+win8+wp8+wpa81"
+   }
+ }``` (this allows us to install Prism.Core - since this dependency doesnt provide a nuget package for .netstandard)
+5. Install Nuget Package Prism.Validation
+
+##Useage for version 1.0.0.0
 1. Use in your PCL Profile ```Profile7``` (Set in your .csproj```<TargetFrameworkProfile>Profile7</TargetFrameworkProfile>```)
 2. Install Prism.Validation in your project with nuget ```Install-Package Prism.Validation``` 
 3. Create your model class and inherit from ```ValidatableBindableBase```.
