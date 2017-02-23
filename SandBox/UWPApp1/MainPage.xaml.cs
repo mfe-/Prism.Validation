@@ -25,6 +25,7 @@ namespace UWPApp1
         public MainPage()
         {
             this.InitializeComponent();
+            DataContext = new MainPageViewModel();
         }
     }
 }
