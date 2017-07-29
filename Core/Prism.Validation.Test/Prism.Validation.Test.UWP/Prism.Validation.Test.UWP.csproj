@@ -130,7 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Prism.Validation\Prism.Validation.csproj">
-      <Project>{47c32a9b-6304-4f0e-a8db-2dbf7584aef0}</Project>
+      <Project>{64649b9f-fb49-4c60-ba79-c33af603abb7}</Project>
       <Name>Prism.Validation</Name>
     </ProjectReference>
   </ItemGroup>
