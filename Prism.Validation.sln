@@ -7,6 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{EC84
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{027D702D-4CD7-4D49-8089-A405CB057FD3}"
 	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -22,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Validation.Test.UWP",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UwpApp1", "Example\UwpApp1\UwpApp1.csproj", "{891EC693-A71E-4A8B-AE45-8D6C9C5BD11D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prism.Validation", "Core\Prism.Validation\Prism.Validation.csproj", "{64649B9F-FB49-4C60-BA79-C33AF603ABB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prism.Validation", "Core\Prism.Validation\Prism.Validation.csproj", "{64649B9F-FB49-4C60-BA79-C33AF603ABB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
