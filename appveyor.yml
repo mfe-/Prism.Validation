@@ -1,4 +1,6 @@
 version: 1.0.{build}
 image: Visual Studio 2017
+# to run your custom scripts instead of automatic MSBuild
 build_script:
-- cmd: nuget restore
+#- cmd: nuget restore
+- cmd: msbuild C:\projects\prism-extensions\Core\Prism.Validation\Prism.Validation.csproj /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
