@@ -1,7 +1,8 @@
 ﻿{
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.3.3",
-    "Prism.Core": "6.3.0",
+    "Microsoft.Xaml.Behaviors.Uwp.Managed": "2.0.0",
+    "Prism.Core": "7.0.0.26-ci",
     "System.ComponentModel.Annotations": "4.3.0"
   },
   "frameworks": {
