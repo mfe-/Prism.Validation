@@ -1,8 +1,15 @@
 version: 1.0.{build}
 image: Visual Studio 2017
-# to run your custom scripts instead of automatic MSBuild
+clone_depth: 1
+environment:
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: 1
 build_script:
-#- cmd: nuget restore
-- cmd: nuget sources add -Name MyNuget -Source https://www.myget.org/F/prism/api/v3/index.json
-- cmd: dotnet restore C:\projects\prism-extensions\Core\Prism.Validation\Prism.Validation.csproj
-- cmd: dotnet build C:\projects\prism-extensions\Core\Prism.Validation\Prism.Validation.csproj
+- cmd: >-
+    cd Core\Prism.Validation
+
+    dotnet restore
+
+    dotnet build -c Release
+
+    cd ..\..
