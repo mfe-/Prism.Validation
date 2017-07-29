@@ -4,4 +4,4 @@ image: Visual Studio 2017
 build_script:
 #- cmd: nuget restore
 - cmd: dotnet restore C:\projects\prism-extensions\Core\Prism.Validation\Prism.Validation.csproj
-       dotnet build C:\projects\prism-extensions\Core\Prism.Validation\Prism.Validation.csproj
+- cmd: dotnet build C:\projects\prism-extensions\Core\Prism.Validation\Prism.Validation.csproj
