@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/mfe-/Prism.Validation</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mfe-/Prism.Validation</RepositoryUrl>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <FileVersion>1.2.0.0</FileVersion>
+    <Version>1.2.0</Version>
+    <Description>The Prism.Validation is based on Prism. It allows you to use Validations based on the ValidationAttributes in your Model, ViewModel and so on.</Description>
+    <Copyright>(C) 2018</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
