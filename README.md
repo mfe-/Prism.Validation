@@ -8,12 +8,13 @@ Because most of you want to share your code acroos the .NET application model (a
 ## Install
 [Install](https://www.nuget.org/packages/Prism.Validation/) with nuget ```Install-Package Prism.Validation```
 
-## Useage for version 1.2.0  (Use Prism.Validation in a Library Project)
+## Useage for version 1.2.0
 1. In you PCL set your Targeting to at least .NETStandard 1.4
 2. Install Prism.Validation in your project with nuget ```Install-Package Prism.Validation``` 
 3. Create your model class and inherit from ```ValidatableBindableBase```.
 4. Decorate your properties with DataAnnotations like ```[StringLength(2, ErrorMessage = "Max 2 digits")]```
 5. Set Binding in XAML like ```<TextBox Text="{Binding Name,Mode=TwoWay,ValidatesOnDataErrors=True,UpdateSourceTrigger=PropertyChanged}" />``` 
+6. For Xamarin.Forms Projects you may check out [https://www.davidbritch.com/2017/03/validating-user-input-in-xamarinforms-iv.html](https://www.davidbritch.com/2017/03/validating-user-input-in-xamarinforms-iv.html)
 
 ## Validation
 Model classes are a good example which can be used to share across different platforms. Also you may want to add some basic validations into the model with DataAnnotaions.
