@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="App1.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <DataTemplate x:Key="CarDataTemplate">
+                <ViewCell>
+                    <Grid>
+                        <Entry Text="{Binding Name}" local:Validation.Errors="{Binding Errors[Name]}" BackgroundColor="Green" />
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Validating user input in a Windows Store business app using C#, XAML, and Prism" />
+            <ListView ItemsSource="{Binding Path=CarList}" ItemTemplate="{StaticResource Key=CarDataTemplate}" 
+                      SelectedItem="{Binding Path=SelectedCar}" local:Validation.Errors="{Binding Errors[SelectedCar]}"></ListView>
+        </StackLayout>
+
+    </ContentPage.Content>
+
+
+</ContentPage>
