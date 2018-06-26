@@ -93,7 +93,8 @@ namespace Prism.Validation
         /// </returns>
         public bool ValidateProperties()
         {
-            return _bindableValidator.ValidateProperties();
+            return !_bindableValidator.IsValidationEnabled // don't fail if validation is disabled
+                || _bindableValidator.ValidateProperties();
         }
 
         /// <summary>
