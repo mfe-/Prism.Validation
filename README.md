@@ -23,7 +23,20 @@ The Prism Core Libary doesn't provide a validation implementation, so the Prism.
 
 With the Prism.Validation you could share your model with DataAnnotaion between wpf, xamarin and uwp. 
 
+## Screenshots
+
+### Android
+![alt tag](https://raw.githubusercontent.com/mfe-/Prism.Validation/master/Prism.Validation.android.gif)
+### UWP
+![alt tag](https://raw.githubusercontent.com/mfe-/Prism.Validation/master/Prism.Validation.uwp.gif)
+### WPF
+![alt tag](https://raw.githubusercontent.com/mfe-/Prism.Validation/master/Prism.Validation.wpf.gif)
+
 ## Changelog
+
+### 1.3.0.0
+
+- Upgraded to Prism 7.1.0.431
 
 ### 1.2.0.0
 

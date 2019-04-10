@@ -1,10 +1,6 @@
 ﻿using Prism.Validation;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Windows.UI.Xaml;
 
 namespace UwpApp1
@@ -53,8 +49,10 @@ namespace UwpApp1
             Style style = (propertyErrors.Any()) ?
             (Style)Application.Current.Resources[((HighlightFormFieldOnErrors)d).HighlightStyleName] :
             ((Style)Application.Current.Resources[((HighlightFormFieldOnErrors)d).OriginalStyleName]);
-
-            control.Style = style;
+            if (control is object)
+            {
+                control.Style = style;
+            }
         }
 
         protected override void OnAttached()

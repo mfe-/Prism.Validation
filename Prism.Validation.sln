@@ -7,11 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{EC84
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{027D702D-4CD7-4D49-8089-A405CB057FD3}"
 	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
 		nuget.config = nuget.config
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Example\Model\Model.csproj", "{B96510EC-681D-4A60-8C7D-3B9B7E82816A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Example\Model\Model.csproj", "{B96510EC-681D-4A60-8C7D-3B9B7E82816A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication", "Example\WpfApplication\WpfApplication.csproj", "{73C7ADE4-F9A2-4045-ADA4-7B003180A01C}"
 EndProject
