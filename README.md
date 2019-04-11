@@ -24,7 +24,7 @@ The Prism Core Libary doesn't provide a validation implementation, so the Prism.
 With the Prism.Validation you could share your model with DataAnnotaion between wpf, xamarin and uwp. 
 
 ## Screenshots
-
+With `[StringLength(2, ErrorMessage = "Max 2 digits")]`
 ### Android
 ![alt tag](https://raw.githubusercontent.com/mfe-/Prism.Validation/master/Prism.Validation.android.gif)
 ### UWP
